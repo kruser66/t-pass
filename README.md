@@ -49,11 +49,7 @@ pip install -r requirements.txt
 Для запуска проекта понадобятся переменные окружения:
 
 ```bash
-BOT_TOKEN='YOUR_BOT_TOKEN'
 SECRET_KEY='DJANGO_SECRET_KEY'
-
-YANDEX_GEO_AI_KEY='API_YANDEX_GEO'
-YANDEX_WEATHER_API_KEY='API_YANDEX_WEATHER'
 ```
 
 ## Запуск проекта
@@ -66,7 +62,12 @@ python manage.py runserver
 
 ### Доступные endpoints
 
-GET /api/weather?city=<city_name>
+Полный список доступных endpoints можно посмотреть по аресу:
+
+```bash
+http://127.0.0.1:8000/api/v1/schema/swagger-ui/
+http://127.0.0.1:8000/api/v1/schema/redoc/
+```
 
 ## Цель проекта
 
